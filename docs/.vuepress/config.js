@@ -1,6 +1,7 @@
 const { description } = require('../../package')
 
 module.exports = {
+<<<<<<< HEAD
   // theme:"Layout",
   base:'/doc/',
   catch:false,
@@ -8,6 +9,13 @@ module.exports = {
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
   title: 'Some Tips',
+=======
+  base:'https://github.com/hanyunchao/doc',
+  /**
+   * Ref：https://v1.vuepress.vuejs.org/config/#title
+   */
+  title: 'Vuepress Docs Boilerplate',
+>>>>>>> fa9c05543ac4b381534e81b744d16e54396b3b60
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -37,6 +45,7 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
+<<<<<<< HEAD
         text: '基础',
         link: '/typescript/',
       },
@@ -108,13 +117,47 @@ module.exports = {
          ]
       }
     ],
+=======
+        text: 'Guide',
+        link: '/guide/',
+      },
+      {
+        text: 'Config',
+        link: '/config/'
+      },
+      {
+        text: 'VuePress',
+        link: 'https://v1.vuepress.vuejs.org'
+      }
+    ],
+    sidebar: {
+      '/guide/': [
+        {
+          title: 'Guide',
+          collapsable: false,
+          children: [
+            '',
+            'using-vue',
+          ]
+        }
+      ],
+    }
+  },
+>>>>>>> fa9c05543ac4b381534e81b744d16e54396b3b60
 
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
+<<<<<<< HEAD
     plugins: [
       '@vuepress/plugin-back-to-top',
       '@vuepress/plugin-medium-zoom',
     ]
   }
+=======
+  plugins: [
+    '@vuepress/plugin-back-to-top',
+    '@vuepress/plugin-medium-zoom',
+  ]
+>>>>>>> fa9c05543ac4b381534e81b744d16e54396b3b60
 }
